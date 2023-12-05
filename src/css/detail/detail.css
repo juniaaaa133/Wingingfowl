@@ -1,0 +1,132 @@
+@import '../abstract/abstract.css';
+
+
+.dt-ctn {
+    z-index: 4;
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    top:0;
+    }
+    .bg-img {
+        width:100%;
+        height: 100%;
+
+    }
+.dt-layer {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: 5;
+    background-image: linear-gradient(to bottom right, rgba(24, 24, 24, 0.751),rgba(21, 21, 21, 0.963),rgb(28, 27, 27));
+}
+.back {
+    position: absolute;
+    bottom:30px;
+    left:20px;
+    z-index: 7;
+}
+.info-ctn {
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    width:94%;
+    height: 100%;
+    margin:auto;
+    left:0;right:0;
+    position: absolute;
+    z-index: 6;
+    padding-top: 55px;;
+}
+.info-pic {
+    width:350px;
+    height: 330px;
+    border-radius: 20px;
+}
+.info {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.name {
+    font-weight: 700;
+}
+.desc {
+    margin-top: 0px;
+}
+.desc-ctn {
+    overflow-y: auto;
+    height: 510px;
+}
+
+@media (max-width: 990px) {
+   
+    .info {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    .info-pic {
+        width:300px;
+        height: 330px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 766px) {
+ .info-ctn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    width:94%;
+    height: 100%;
+    margin:auto;
+    left:0;right:0;
+    position: absolute;
+    z-index: 6;
+    padding-top: 20px;;
+}
+    .info {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    .info-pic {
+        width:350px;
+        height: 300px;
+        border-radius: 20px;
+    }
+    .desc-ctn {
+        overflow-y: auto;
+        height: 130px;
+    }
+}
+
+@media (max-width: 476px) {
+    .info-ctn {
+       width:90%;
+   }
+       .info {
+           width: 100%;
+           height: 100%;
+           display: flex;
+           flex-direction: column;
+           gap:10px;
+       }
+       .info-pic {
+           width:100%;
+           height: 300px;
+       }
+       .desc-ctn {
+           overflow-y: auto;
+           height: 130px;
+       }
+   }

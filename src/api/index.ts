@@ -1,0 +1,1 @@
+export const api: string = 'https://raw.githubusercontent.com/sannlynnhtun-coding/Birds/main/Birds.json';
