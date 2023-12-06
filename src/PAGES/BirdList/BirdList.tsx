@@ -25,15 +25,9 @@ export const BirdList: React.FC<BirdListArr> = ({arr}: BirdListArr) => {
     let [Obj,setObj] = useState<BirdData>()
 
     let DetailFn = async (IdValue: number) => {
-        await axios.get<FetchedData>(api)
-        .then(res => {
-            let bird_data = res.data.Tbl_Bird;
-           let FilteredData = bird_data.filter((data: BirdData) =>data.Id == IdValue)
+           let FilteredData = arr.filter((data: BirdData) =>data.Id == IdValue)
             setObj(FilteredData[0]);
-               
         setDisplay('block');
-        })
-        .catch(err => console.log(err))
     }
 
     return (
